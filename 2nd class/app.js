@@ -20,5 +20,10 @@ console.log("<br>"+Number(number))
 
 
 let nmb = "499.99RS"
+console.log("<br>"+"<br>"+nmb)
+console.log("<br>"+"Rs"+parseFloat(nmb))
+
+
+nmb = "80.6574kg"
 document.write("<br>"+"<br>"+nmb)
-document.write("<br>"+"Rs"+parseFloat(nmb))
+document.write("<br>"+parseInt(nmb)+" KG")
