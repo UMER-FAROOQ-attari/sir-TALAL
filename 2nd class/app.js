@@ -43,11 +43,17 @@ if(age == true){
 
 
 //
-let speed = prompt("pleas Enter Your speed");
+let speed = 44
 speed = parseInt(speed);
 if(speed <= 70 ){
-    document.write("no Challans")
+    console.log("no Challans")
 }
 if(speed >= 70 ){
-    document.write("Pay heavy Fines")
+    console.log("Pay heavy Fines")
 }
+
+let salary = 50000;
+let bouns = "12.5%";
+bouns = parseFloat(bouns)
+let bouns_amount = (salary / 100) * bouns;
+document.write(bouns_amount);
