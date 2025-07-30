@@ -56,4 +56,6 @@ let salary = 50000;
 let bouns = "12.5%";
 bouns = parseFloat(bouns)
 let bouns_amount = (salary / 100) * bouns;
-document.write(bouns_amount);
+document.write("bouns_amount:"+ bouns_amount);
+document.write("<br>bouns_amount+salary "+ (bouns_amount + salary));
+document.write("<br> salary:"+ ((bouns_amount + salary)-20000));
