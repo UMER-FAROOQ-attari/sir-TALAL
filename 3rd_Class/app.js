@@ -10,6 +10,7 @@
 //     show_masg(matcted,bit_amount)
 // }
 
+
 // function matcted(makebit , bit_number,){
 //     let T_matched = false;
 //     if(makebit == bit_number){
@@ -23,12 +24,19 @@
 //     }
 
 // }
+let users = []
 function playgame(){
 let user_email = document.getElementById("email")
-let password = document.getElementById("password")
-console.log(user_email.value,password.value)
+let user_password = document.getElementById("password")
+  let eml = user_email.value
+    let pas = user_password.value
+  let user ={
+    email : eml,
+    password :pas
+}
+users.push(user)
 
 }
 function login(){
-    
+  console.log(users)   
 }
