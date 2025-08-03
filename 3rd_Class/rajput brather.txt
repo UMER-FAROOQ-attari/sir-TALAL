@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>rajpoot king</title>
+    </head>
+<body>
+
+    <h1>This is my rule</h1>
+    <p>i am very smart and intalegent boy i feel like 
+        smart people</p>
+
+        </body>
+        </html>
