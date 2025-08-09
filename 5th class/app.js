@@ -39,3 +39,11 @@ function print_name(){
     console.log(i++)
 }
 let myint = setInterval(print_name, 100)
+localStorage.setItem("studentName", "UMER")
+let studentName =  document.getElementById("Student");
+let Name =  document.getElementById("name");
+function print (){
+    localStorage.setItem("studentName", studentName.value)
+    Name.innerHTML= localStorage.getItem("studentName")
+}
+studentName.innerHTML = localStorage.getItem("studentName")
