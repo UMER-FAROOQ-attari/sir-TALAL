@@ -1,11 +1,9 @@
 let hours = document.getElementById("hours");
 let mints = document.getElementById("mints");
 let sec = document.getElementById("sec");
+let second = 0;
 function stpwatch (){
-  let seconed = 0;
-    if(seconed <= 60 ){
-        seconed++
-        sec.innerHTML = seconed;
-    } 
+  second++;
+  sec.innerHTML = second
 }
 setInterval(stpwatch , 1000)
