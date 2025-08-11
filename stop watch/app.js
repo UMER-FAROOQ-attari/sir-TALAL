@@ -18,4 +18,4 @@ function stpwatch (){
         hur++;
     }
 }
-setInterval(stpwatch , 1)
+setInterval(stpwatch , 1000)
