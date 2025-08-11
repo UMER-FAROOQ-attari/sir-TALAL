@@ -18,4 +18,10 @@ function stpwatch (){
         hur++;
     }
 }
-setInterval(stpwatch , 1000)
+let interval ;
+function start (){
+interval = setInterval(stpwatch , 1000)
+}
+function stop (){
+   clearInterval(interval)
+}
