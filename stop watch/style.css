@@ -1,38 +1,12 @@
-/* Custom styles for time digits */
-.time {
-  padding: 15px 25px;
-  border-radius: 8px;
-  font-size: 60px;
-  background-color: #124e78; /* Deep blue */
-  color: #fff;
-  margin: 0 10px;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;   
 }
-
-/* Hover effect for time digits */
-.time:hover {
-  transform: scale(1.1);
-  background-color: #f0f0c9; /* Light cream */
-  color: #333;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Custom card styling */
-.card {
-  background-color: #fff;
-  border: none;
-  border-radius: 15px;
-}
-
-/* Bootstrap button customization for hover effects */
-button:focus {
-  outline: none;
-}
-
-button {
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-  transform: scale(1.05);
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
