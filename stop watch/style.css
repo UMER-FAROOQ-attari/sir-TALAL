@@ -1,66 +1,38 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #26547c, #ef476f); /* Gradient background */
-  color: #fff; /* White text for contrast */
-  font-family: 'Arial', sans-serif; /* Clean font */
-}
-
-h1 {
+/* Custom styles for time digits */
+.time {
+  padding: 15px 25px;
+  border-radius: 8px;
   font-size: 60px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-align: center;
-  animation: fadeIn 1s ease-in-out;
-}
-
-span {
-  padding: 10px 20px;
-  border-radius: 10px;
+  background-color: #124e78; /* Deep blue */
+  color: #fff;
   margin: 0 10px;
-  display: inline-block;
-  font-size: 50px;
-  animation: bounce 1s infinite alternate;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Colors for the different time units */
-h1 span#hours {
-  background-color: #26547c; /* Dark blue for hours */
+/* Hover effect for time digits */
+.time:hover {
+  transform: scale(1.1);
+  background-color: #f0f0c9; /* Light cream */
+  color: #333;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-h1 span#mints {
-  background-color: #ffd166; /* Soft yellow for minutes */
+/* Custom card styling */
+.card {
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
 }
 
-h1 span#sec {
-  background-color: #06d6a0; /* Vibrant teal for seconds */
+/* Bootstrap button customization for hover effects */
+button:focus {
+  outline: none;
 }
 
-/* Animation for fade-in */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Animation for bouncing effect */
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-15px);
-  }
+button:hover {
+  transform: scale(1.05);
 }
