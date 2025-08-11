@@ -10,8 +10,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #faf3dd; /* Soft background color */
-  color: #333; /* Dark text for contrast */
+  background: linear-gradient(135deg, #26547c, #ef476f); /* Gradient background */
+  color: #fff; /* White text for contrast */
   font-family: 'Arial', sans-serif; /* Clean font */
 }
 
@@ -34,15 +34,15 @@ span {
 
 /* Colors for the different time units */
 h1 span#hours {
-  background-color: #ffa69e; /* Light pink for hours */
+  background-color: #26547c; /* Dark blue for hours */
 }
 
 h1 span#mints {
-  background-color: #b8f2e6; /* Light teal for minutes */
+  background-color: #ffd166; /* Soft yellow for minutes */
 }
 
 h1 span#sec {
-  background-color: #aed9e0; /* Light blue for seconds */
+  background-color: #06d6a0; /* Vibrant teal for seconds */
 }
 
 /* Animation for fade-in */
