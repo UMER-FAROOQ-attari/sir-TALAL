@@ -1,5 +1,5 @@
 let capital = document.getElementById("capital-city");
-let  provice = document.getElementById("provicex")
+let  provice = document.getElementById("provice")
 function city(){
     capital.style.backgroundColor = "black"
     capital.style.color = "yellow"
@@ -11,7 +11,8 @@ function capitalCityleave(){
     capital.style.color = "black"
     capital.style.fontFamily = "fantasy"
     let capitalEl  = capital.value
-    if(capitalEl.value.tolowerCase === "lahore"){
-        proviceEl.value = "punjab"
+    if(capitalEl.toLowerCase() === "lahore"){
+        provice.value = "Punjab"
     }
-} 
+
+  } 
