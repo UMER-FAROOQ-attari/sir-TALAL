@@ -17,8 +17,11 @@ function capitalCityleave(){
 if(capitalEl.toLowerCase() === "karachi"){
         provice.value = "Sindh"
     }if(capitalEl.toLowerCase() === "quetta"){
-        provice.value = "Blocistan"
+        provice.value = "Balochistan"
     }if(capitalEl.toLowerCase() === "peshawar"){
         provice.value = "Kp"
-    }
-  } 
+     }
+   let firstletter = capitalEl.charAt(0).toUpperCase();
+   let restChar = capitalEl.slice(1).toLowerCase();
+   capital.value = firstletter + restChar
+} 
