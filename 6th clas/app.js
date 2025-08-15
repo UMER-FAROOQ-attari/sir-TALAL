@@ -14,5 +14,11 @@ function capitalCityleave(){
     if(capitalEl.toLowerCase() === "lahore"){
         provice.value = "Punjab"
     }
-
+if(capitalEl.toLowerCase() === "karachi"){
+        provice.value = "Sindh"
+    }if(capitalEl.toLowerCase() === "quetta"){
+        provice.value = "Blocistan"
+    }if(capitalEl.toLowerCase() === "peshawar"){
+        provice.value = "Kp"
+    }
   } 
