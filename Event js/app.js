@@ -1,10 +1,17 @@
-let h1 = document.getElementById("heading");
-function func (){
-    h1.style.backgroundColor = "yellow"
-    h1.style.color = "black"
-}
-// `mousedown` triggers when the mouse button is pressed down.
-// `click` triggers when the mouse button is pressed and released.
-// &&
-// mousemove: The event will fire every time the mouse moves.
-// mouseover: The event will fire when the mouse first moves over the element.
+// let h1 = document.getElementById("heading");
+// // function func (event){
+// //     // h1.style.backgroundColor = "yellow"
+// //     // h1.style.color = "black"
+// //    console.log(event.key)
+// // }
+// h1.addEventListener('keydown', function(event) {
+//   console.log('کیا بٹن دبایا گیا؟', event.key);
+// });
+// // `mousedown` triggers when the mouse button is pressed down.
+// // `click` triggers when the mouse button is pressed and released.
+// // &&
+// // mousemove: The event will fire every time the mouse moves.
+// // mouseover: The event will fire when the mouse first moves over the element.
+ document.addEventListener('keydown', function(event) {
+    console.log('آپ نے ' + event.key + ' دبایا');
+  });
