@@ -11,7 +11,13 @@
 // // `click` triggers when the mouse button is pressed and released.
 // // &&
 // // mousemove: The event will fire every time the mouse moves.
-// // mouseover: The event will fire when the mouse first moves over the element.
- document.addEventListener('keydown', function(event) {
-    console.log('آپ نے ' + event.key + ' دبایا');
-  });
+// // // mouseover: The event will fire when the mouse first moves over the element.
+//  document.addEventListener('keydown', function(event) {
+//     console.log('آپ نے ' + event.key + ' دبایا');
+//   });
+
+let input = document.getElementById("inp");
+function func (butto){
+    console.log(butto.key)
+}
+input.addEventListener("keydown", func)
