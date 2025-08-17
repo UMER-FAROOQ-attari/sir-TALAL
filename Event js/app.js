@@ -16,8 +16,11 @@
 //     console.log('آپ نے ' + event.key + ' دبایا');
 //   });
 
+let form = document.getElementById("for")
 let input = document.getElementById("inp");
-function func (butto){
-    console.log(butto.key)
+function func (event){
+    console.log("hogya")
+   event.preventDefault();
+   input.value =""
 }
-input.addEventListener("keyup", func)
+form.addEventListener("submit", func)
