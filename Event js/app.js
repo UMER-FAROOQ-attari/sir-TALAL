@@ -16,11 +16,16 @@
 //     console.log('آپ نے ' + event.key + ' دبایا');
 //   });
 
-let form = document.getElementById("for")
-let input = document.getElementById("inp");
-function func (event){
-    console.log("hogya")
-   event.preventDefault();
-   input.value =""
-}
-form.addEventListener("submit", func)
+// let form = document.getElementById("for")
+// let input = document.getElementById("inp");
+// function func (event){
+//     console.log("hogya")
+//    event.preventDefault();
+//    input.value =""
+// }
+// form.addEventListener("submit", func)
+let select = document.getElementById("colorslect");
+let reslut = document.getElementById("slected");
+select.addEventListener("change",function ( ){
+    reslut.textContent = "Select Color" + select.value; 
+})
