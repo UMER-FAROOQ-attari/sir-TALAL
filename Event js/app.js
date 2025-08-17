@@ -20,4 +20,4 @@ let input = document.getElementById("inp");
 function func (butto){
     console.log(butto.key)
 }
-input.addEventListener("keydown", func)
+input.addEventListener("keyup", func)
