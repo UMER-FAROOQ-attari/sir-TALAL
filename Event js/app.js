@@ -1,9 +1,7 @@
-// let h1 = document.getElementById("heading");
-// // function func (event){
-// //     // h1.style.backgroundColor = "yellow"
-// //     // h1.style.color = "black"
-// //    console.log(event.key)
-// // }
+let h1 = document.getElementById("heading");
+function func (){
+    body.style.backgroundColor = "yellow"
+}
 // h1.addEventListener('keydown', function(event) {
 //   console.log('کیا بٹن دبایا گیا؟', event.key);
 // });
@@ -24,8 +22,11 @@
 //    input.value =""
 // }
 // form.addEventListener("submit", func)
-let select = document.getElementById("colorslect");
-let reslut = document.getElementById("slected");
-select.addEventListener("change",function ( ){
-    reslut.textContent = "Select Color" + select.value; 
-})
+// let select = document.getElementById("colorslect");
+// let reslut = document.getElementById("slected");
+// select.addEventListener("change",function ( ){
+//     reslut.textContent = "Select Color" + select.value; 
+// })
+
+let cntryname = document.getElementById("Cntryname");
+let code = document.getElementById("code");
