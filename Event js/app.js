@@ -33,6 +33,6 @@ let code = document.getElementById("code");
 function filcntrycode(){
     if(cntryname.value.toLowerCase() == "pakistan"){
    code.value = "+92"
-   cntryname.value = 
+   cntryname.value = cntryname.value.charAt(0).toUpperCase() + inputValue.slice(1).toLowerCase()
     }
 }
