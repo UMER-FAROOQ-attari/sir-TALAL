@@ -1,22 +1,99 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
-body{
+
+body {
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-  flex-direction: column;
-  gap: 20px;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #f7f7f7;
 }
-h1{
-    background-color: black;
-    color: yellow;
+
+h1 {
+    background-color: #333;
+    color: #f9d342;
     padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px black;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input, button {
+    font-size: 1.2rem;
+    padding: 12px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+}
+
+select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+    text-align: center;
 }

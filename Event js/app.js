@@ -32,7 +32,19 @@ let cntryname = document.getElementById("Cntryname");
 let code = document.getElementById("code");
 function filcntrycode(){
     if(cntryname.value.toLowerCase() == "pakistan"){
-   code.value = "+92"
-   cntryname.value = cntryname.value.charAt(0).toUpperCase() + inputValue.slice(1).toLowerCase()
+   code.value = "+92-"
+   cntryname.value = cntryname.value.charAt(0).toUpperCase() + cntryname.value.slice(1).toLowerCase()
+    }
+     if(cntryname.value.toLowerCase() == "india"){
+   code.value = "+91-"
+   cntryname.value = cntryname.value.charAt(0).toUpperCase() + cntryname.value.slice(1).toLowerCase()
+    }
+    if(cntryname.value.toLowerCase() == "canada"){
+   code.value = "+1-"
+   cntryname.value = cntryname.value.charAt(0).toUpperCase() + cntryname.value.slice(1).toLowerCase()
+    }
+    if(cntryname.value.toLowerCase() == "australia"){
+   code.value = "+61-"
+   cntryname.value = cntryname.value.charAt(0).toUpperCase() + cntryname.value.slice(1).toLowerCase()
     }
 }
