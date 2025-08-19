@@ -30,6 +30,9 @@
 
 let cntryname = document.getElementById("Cntryname");
 let code = document.getElementById("code");
-function check(){
-    cntryname.value = "hhhh"
+function filcntrycode(){
+    if(cntryname.value.toLowerCase() == "pakistan"){
+   code.value = "+92"
+   cntryname.value = 
+    }
 }
