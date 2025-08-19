@@ -1,7 +1,7 @@
-let h1 = document.getElementById("heading");
-function func (){
-    body.style.backgroundColor = "yellow"
-}
+// let h1 = document.getElementById("heading");
+// function func (){
+//     body.style.backgroundColor = "yellow"
+// }
 // h1.addEventListener('keydown', function(event) {
 //   console.log('کیا بٹن دبایا گیا؟', event.key);
 // });
@@ -30,3 +30,6 @@ function func (){
 
 let cntryname = document.getElementById("Cntryname");
 let code = document.getElementById("code");
+function check(){
+    cntryname.value = "hhhh"
+}
