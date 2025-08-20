@@ -48,6 +48,10 @@ function filcntrycode(){
    cntryname.value = cntryname.value.charAt(0).toUpperCase() + cntryname.value.slice(1).toLowerCase()
     }
 }
+cntryname.addEventListener("copy",function(){
+ alert("copy q kia")
+})
+
 // window.addEventListener("load",function(){
 //   this.alert("ue lo")
 // })
