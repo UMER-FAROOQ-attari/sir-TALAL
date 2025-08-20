@@ -48,6 +48,11 @@ function filcntrycode(){
    cntryname.value = cntryname.value.charAt(0).toUpperCase() + cntryname.value.slice(1).toLowerCase()
     }
 }
-window.addEventListener("load",function(){
-  this.alert("ue lo")
-})
+// window.addEventListener("load",function(){
+//   this.alert("ue lo")
+// })
+  window.addEventListener("scroll", function() {
+    let scrollTop = window.scrollY; // کتنے px نیچے گئے
+    document.getElementById("demo").innerText = 
+      "آپ " + scrollTop + "px نیچے آ گئے ہیں";
+  });
