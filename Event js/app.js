@@ -55,6 +55,10 @@ cntryname.addEventListener("copy",function(){
 cntryname.addEventListener("paste",function(){
  alert("copy q kia")
 })
+
+cntryname.addEventListener("cut",function(){
+ alert("copy q kia")
+})
 // window.addEventListener("load",function(){
 //   this.alert("ue lo")
 // })
