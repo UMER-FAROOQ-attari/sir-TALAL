@@ -23,23 +23,33 @@
     <p id="lastpera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dignissimos error aliquid recusandae
         nobis. Doloribus, consequatur rem officia totam reiciendis nulla illum eius magni illo. Quis atque deleniti
         quibusdam fugit!</p>
-</body>
-<script>
-    let h1 = document.getElementById("headi");
-    let lstp = document.getElementById("lastpera");
-    let al = document.getElementsByTagName("p");
-    let alsp = document.getElementsByClassName("spaical");    
-    function start() {
 
-        for(let i = 0; i<alsp.length;i++){
-            alsp[i].style.backgroundColor = "black"
-            alsp[i].style.color = "white"
-            alsp[i].style.fontSize = "32px"
-            alsp[i].innerHTML = "32px <br> 1"
+    <script>
+        let alsp = document.getElementsByClassName("spaical");
+
+        function changestyle() {
+            for (let i = 0; i < alsp.length; i++) {
+                let currentBg = alsp[i].style.backgroundColor;
+                if (currentBg === "black") {
+                    alsp[i].style.backgroundColor = "white";
+                    alsp[i].style.color = "black";
+                } else {
+                    alsp[i].style.backgroundColor = "black";
+                    alsp[i].style.color = "white";
+                }
+            }
         }
-    }
-   setTimeout(start,3000) 
-  console.log("32px \n 1")
-</script>
+
+        function start() {
+            for (let i = 0; i < alsp.length; i++) {
+                alsp[i].style.fontSize = "32px"; 
+            }
+            setInterval(changestyle, 1000); 
+        }
+
+        setTimeout(start, 1000); 
+    </script>
+
+</body>
 
 </html>
