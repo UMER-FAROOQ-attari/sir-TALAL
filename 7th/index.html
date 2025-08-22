@@ -25,12 +25,15 @@
         quibusdam fugit!</p>
 </body>
 <script>
-    let h1 = document.getElementById("headi");
-    let lstp = document.getElementById("lastpera")
-    let al = document.getElementsByTagName("p")
+    
     function start() {
-        console.log(al)
-        console.log(al[0].hidden = true)
+    let h1 = document.getElementById("headi");
+    let lstp = document.getElementById("lastpera");
+    let al = document.getElementsByTagName("p");
+    let alsp = document.getElementsByClassName("spaical");
+        alsp.forEach(element => {
+            element.style.backgroundColor = "black"
+        });
     }
     start()
 </script>
