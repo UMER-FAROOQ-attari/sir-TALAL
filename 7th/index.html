@@ -25,17 +25,19 @@
         quibusdam fugit!</p>
 </body>
 <script>
-    
-    function start() {
     let h1 = document.getElementById("headi");
     let lstp = document.getElementById("lastpera");
     let al = document.getElementsByTagName("p");
-    let alsp = document.getElementsByClassName("spaical");
-        alsp.forEach(element => {
-            element.style.backgroundColor = "black"
-        });
+    let alsp = document.getElementsByClassName("spaical");    
+    function start() {
+
+        for(let i = 0; i<alsp.length;i++){
+            alsp[i].style.backgroundColor = "black"
+            alsp[i].style.color = "white"
+            alsp[i].style.fontSize = "32px"
+        }
     }
-    start()
+   setTimeout(start,3000) 
 </script>
 
 </html>
