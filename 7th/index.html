@@ -30,20 +30,22 @@
         function changestyle() {
             for (let i = 0; i < alsp.length; i++) {
                 let currentBg = alsp[i].style.backgroundColor;
-                if (currentBg === "black") {
+                let currentft = alsp[i].style.fontSize;
+                if (currentBg === "black" ) {
                     alsp[i].style.backgroundColor = "white";
                     alsp[i].style.color = "black";
-                } else {
+                    alsp[i].style.fontSize = "20px"
+                 } else {
                     alsp[i].style.backgroundColor = "black";
                     alsp[i].style.color = "white";
+                    alsp[i].style.fontSize = "32px"
+                
                 }
+                
             }
         }
 
         function start() {
-            for (let i = 0; i < alsp.length; i++) {
-                alsp[i].style.fontSize = "32px"; 
-            }
             setInterval(changestyle, 1000); 
         }
 
