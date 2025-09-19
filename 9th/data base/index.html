@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+        <label for="email">
+            Email: <input type="text" name="email" id="email">
+        </label>
+        <label for="password">
+            Password: <input type="password" name="password" id="password">
+        </label>
+        <button onClick="registeration()">click</button>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/12.2.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.2.1/firebase-auth-compat.js"></script>
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyDZWbyqNMXukmgHWbHKglVLkFXE1kKJRA4",
+        authDomain: "first-project-1417c.firebaseapp.com",
+        projectId: "first-project-1417c",
+        storageBucket: "first-project-1417c.firebasestorage.app",
+        messagingSenderId: "432196008272",
+        appId: "1:432196008272:web:7aa98112a04fa59ccb1455",
+        measurementId: "G-8CJ803LYWB"
+    };
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="./app.js"></script>
+
+</html>
