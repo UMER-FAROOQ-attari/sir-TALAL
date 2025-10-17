@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-wrapper light-blue darken-2">
+      <a href="#" class="brand-logo">WEB</a>
+      <ul id="nav-mobile" class="right">
+        <li><a href="#modal2" class="modal-trigger">Login</a></li>
+        <li><a href="#modal1" class="modal-trigger">Sign Up</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Modal 1: Sign Up -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>SIGN UP</h4>
+      <form>
+        <input type="email" id="signinemail" placeholder="Email">
+        <input type="password" id="signinpassword" placeholder="Password">
+        <button class="btn waves-effect" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 2: Login -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>LOGIN</h4>
+      <form>
+        <input type="email" id="loginemail" placeholder="Email">
+        <input type="password" id="loginpassword" placeholder="Password">
+        <button class="btn waves-effect" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.modal');
+      M.Modal.init(elems);
+    });
+  </script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDZWbyqNMXukmgHWbHKglVLkFXE1kKJRA4",
+      authDomain: "first-project-1417c.firebaseapp.com",
+      projectId: "first-project-1417c",
+      storageBucket: "first-project-1417c.firebasestorage.app",
+      messagingSenderId: "432196008272",
+      appId: "1:432196008272:web:de20be004edd9b7acb1455",
+      measurementId: "G-W4GPHMGV74"
+    };
+
+    const app = initializeApp(firebaseConfig);
+  </script>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
