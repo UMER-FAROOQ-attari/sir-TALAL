@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Foot ordering App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Food Ordering App</h1>
+    <select name="Fast-food" id="food-list">
+        <option value="PIZZA" >Pizza (1500rs)</option>
+        <option value="BURGER">Burger (1000rs)</option>
+        <option value="PASTA">Pasta (800rs)</option>
+    </select>
+    <input type="number" name="qty" id="qty">
+    <button onclick="placeorder()">Order Now</button>
+     <div id="bill"></div>
 </body>
 <script src="./app.js"></script>
 </html>
