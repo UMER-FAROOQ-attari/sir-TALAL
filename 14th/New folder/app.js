@@ -20,5 +20,5 @@ function times(){
     time.innerHTML = `${h}:${m}:${s}`
 
   } 
-setInterval(times,1000);
+setInterval(times,0);
 }
