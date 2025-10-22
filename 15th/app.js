@@ -6,4 +6,7 @@ for(let i=0;i<names.length;i++){
     let rest = name.slice(1).toLowerCase()
     fullName += firstletter + rest + " "
 }
-console.log(fullName)
+console.log(fullName);
+let msg = "this is a bad product"
+msg = msg.replace(/bad/g,"good")
+console.log(msg)
