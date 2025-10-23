@@ -29,5 +29,5 @@
 // let user2 = new registeration("bakker");
 // alert(user1.name)
 // alert(user2.name)
-let user = {};
-alert(user?.name?.street)
+// let user = {};
+// alert(user?.name?.street)
