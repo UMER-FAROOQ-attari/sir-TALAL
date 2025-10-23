@@ -7,6 +7,7 @@
 // let age = 17.45;
 // age = Math.trunc(age);
 // alert(age)
-let numb = 34.123456;
-numb = numb.toFixed(4)
-alert(numb)
+// let numb = 34.123456;
+// numb = numb.toFixed(4)
+// alert(numb)
+alert(Math.pow(2,12)) 
