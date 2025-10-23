@@ -2,5 +2,11 @@
 // alert(largnumber)
 // let largestnumb = 1e10
 // alert(largestnumb)
-let largestnumb = 1e-6
-alert(largestnumb)
+// let largestnumb = 1e-6
+// alert(largestnumb)
+// let age = 17.45;
+// age = Math.trunc(age);
+// alert(age)
+let numb = 34.123456;
+numb = numb.toFixed(4)
+alert(numb)
