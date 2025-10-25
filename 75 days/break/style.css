@@ -38,3 +38,12 @@ select , button, textarea{
   border-radius: 10px;
   box-shadow: 0 0 7px black;
 }
+button{
+    background-color: rgb(22, 22, 235);
+    color: rgb(185, 232, 250);
+    margin: 20px;
+}
+button:hover{
+     background-color:rgb(185, 232, 250);
+    color:  rgb(22, 22, 235);
+}
