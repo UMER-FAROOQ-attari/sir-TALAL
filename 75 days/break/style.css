@@ -16,7 +16,7 @@ body {
   flex-wrap: wrap;
 }
 
-#personal , #expert ,#qualification ,#skill , #abot{
+#personal , #expert ,#qualification ,#skill , #about ,#addskill{
   padding-top: 20px;
   margin-bottom: 20px;
   justify-content: center;

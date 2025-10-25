@@ -17,7 +17,8 @@
                 <input type="text" id="fatherName" placeholder="Enter Your father Name . . . . . ">
                 <input type="date" id="dob">
                 <input type="number" id="cnic" placeholder="Enter Your CNIC no. . . . . . ">
-                <select name="" id="">
+                <input type="number" id="cell" placeholder="Enter your Phone Number">
+                <select name="" id="cuntry">
                     <option>Pakistan</option>
                     <option>India</option>
                     <option>England</option>
@@ -30,7 +31,7 @@
                     <option>London</option>
                     <option>Paris</option>
                 </select>
-                    <Select>
+                    <Select id="Marri">
                         <option>
                             Single
                         </option>
@@ -42,7 +43,7 @@
             <h2>Experience Data</h2>
             <div id="expert">
                 <input type="number" id="years" placeholder="Enter your Experience year">
-                <input type="text" id="compeny" placeholder="Enter your compeny pervious Name">
+                <input type="text" id="compeny" placeholder="Enter your pervious compeny Name">
             </div>
             <h2>Qualifcation Data</h2>
             <div id="qualification">
@@ -51,12 +52,14 @@
     <input type="number" id="qualiYear" placeholder="Enter Year">
             </div>
             <h2>Other skills</h2>
+            <h5>Pleas maximam 3 skill</h5>
             <div id="skill">
-                <Button>+</Button>
+                <div id="addskill"></div>
+                <Button onclick="add()">+</Button>
             </div>
             <h2>About Yours</h2>
-            <textarea wrap="soft" rows="18" id="abot"></textarea>
-            <button>Submit</button>
+            <textarea wrap="soft" rows="18" id="about"></textarea>
+            <button onclick="submit()">Submit</button>
         </center>
 
     </div>
