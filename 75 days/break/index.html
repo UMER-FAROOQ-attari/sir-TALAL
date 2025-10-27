@@ -18,6 +18,7 @@
                 <input type="text" id="userName" placeholder="Enter Your Name . . . . . ">
                 <input type="text" id="fatherName" placeholder="Enter Your father Name . . . . . ">
                 <input type="date" id="dob">
+                <input type="email" id="email" placeholder="Enter Your Email . . . . . ">
                 <input type="number" id="cnic" placeholder="Enter Your CNIC no. . . . . . ">
                 <input type="number" id="cell" placeholder="Enter your Phone Number">
                 <select name="country" id="cuntry">
@@ -34,41 +35,45 @@
                     <option>Paris</option>
                 </select>
                 <select id="Marri">
-                    <option>
-                        Single
-                    </option>
-                    <option>
-                        Married
-                    </option>
+                    <option>Single</option>
+                    <option>Married</option>
                 </select>
             </div>
+
             <h2>Experience Data</h2>
             <div id="expert">
                 <input type="number" id="years" placeholder="Enter your Experience year">
-                <input type="text" id="compeny" placeholder="Enter your pervious compeny Name">
+                <input type="text" id="compeny" placeholder="Enter your previous company Name">
             </div>
-            <h2>Qualifcation Data</h2>
+
+            <h2>Qualification Data</h2>
             <div id="qualification">
-                <input type="text" id="lastQuali" placeholder="Enter your Last Qualifcation">
-                <input type="text" id="universty" placeholder="Enter your Last Universty">
+                <input type="text" id="lastQuali" placeholder="Enter your Last Qualification">
+                <input type="text" id="universty" placeholder="Enter your Last University">
                 <input type="number" id="qualiYear" placeholder="Enter Year">
             </div>
+
             <h2>Other skills</h2>
-            <h5>Pleas maximam 3 skill</h5>
+            <h5>Please maximum 3 skills</h5>
             <div id="skill">
                 <div id="addskill"></div>
                 <button onclick="add()">+</button>
             </div>
-            <h2>About Yours</h2>
+
+            <h2>About Yourself</h2>
             <textarea wrap="soft" rows="18" id="about"></textarea>
+
+            <h2>Upload Your Profile Picture</h2>
+            <input type="file" id="profilePic" accept="image/*">
+
+            <br><br>
             <button onclick="submit()">Submit</button>
             
-</div>
-        </center>
-<div id="generatedCV">
-              
-            </div>
-    
+    </div>
+    </center>
+
+    <div id="generatedCV"></div>
+
 </body>
 <script src="./app.js"></script>
 
