@@ -23,13 +23,27 @@
 // console.log(fruit2)
 // console.log(fruit3)
 // console.log(fruit4)
-let obj = {
-    careName:"Mehran",
-    fuleAverage :"20km",
-    country:{pakistani :true,
-        city:"lahore"
-    }
-}
-let {careName,fuleAverage,country :{pakistani,city}}=obj;
-console.log(obj);
-console.log(careName,fuleAverage,pakistani,city);
+// let obj = {
+//     careName:"Mehran",
+//     fuleAverage :"20km",
+//     country:{pakistani :true,
+//         city:"lahore"
+//     }
+// }
+// let {careName,fuleAverage,country :{pakistani,city}}=obj;
+// console.log(obj);
+// console.log(careName,fuleAverage,pakistani,city);
+// class Student{
+//     constructor(name,email,password){
+//         this.name=name;
+//         this.email=email;
+//         this.password=password
+//     }
+//     msg(masge){
+//         console.log(`apky pass${this.name} ny jis ki email${this.email} hy or ye nichy wala masge sent kia hy 
+//             ${masge}`)
+//     }
+
+// }
+// const user1 = new Student("Umer","khadeemattar@gmail.com");
+// user1.msg("Slam bhai ")
