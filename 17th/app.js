@@ -48,23 +48,63 @@
 // const user1 = new Student("Umer","khadeemattar@gmail.com");
 // user1.msg("Slam bhai ")
 
-let submit = document.getElementById("submit")
+// let submit = document.getElementById("submit")
 
-class User {
-    constructor(name, password) {
-        this.name = name;
-        this.password = password
-    }
-    masg() {
-        console.log(`hello ${this.name} kesy ho ik baat suno password ye ${this.password} hy apka`)
-    }
+// class User {
+//     constructor(name, password) {
+//         this.name = name;
+//         this.password = password
+//     }
+//     masg() {
+//         console.log(`hello ${this.name} kesy ho ik baat suno password ye ${this.password} hy apka`)
+//     }
     
+// }
+// let users = [];
+// submit.addEventListener("click", () => {
+//     let person = document.getElementById("person");
+//     let code = document.getElementById("code");
+//     let newUser = new User(person.value, code.value)
+//     users.push(newUser);
+//     newUser.masg()
+// })
+// 👇 Class sab se upar rakho
+class Message {
+  constructor(sender, text){
+    this.sender = sender;
+    this.text = text;
+    this.time = new Date().toLocaleTimeString();
+  }
 }
-let users = [];
-submit.addEventListener("click", () => {
-    let person = document.getElementById("person");
-    let code = document.getElementById("code");
-    let newUser = new User(person.value, code.value)
-    users.push(newUser);
-    newUser.masg()
-})
+
+// 👇 DOM references
+let sendBtn = document.getElementById("sendBtn");
+let chatBox = document.getElementById("chatBox");
+
+let messages = [];
+
+// 👇 Event listener
+sendBtn.addEventListener("click", () => {
+  let sender = document.getElementById("sender").value;
+  let text = document.getElementById("msgInput").value;
+
+  if(!sender || !text){
+    alert("Naam aur message dono likho!");
+    return;
+  }
+
+  let newMessage = new Message(sender, text); // ✅ Class use correct
+  messages.push(newMessage);
+
+  displayMessage(newMessage);
+  document.getElementById("msgInput").value = ""; // input clear
+});
+
+// 👇 UI Display Function
+function displayMessage(msgObj){
+  chatBox.innerHTML += `
+    <p><b>${msgObj.sender}</b>: ${msgObj.text} 
+    <small style="color:gray;">(${msgObj.time})</small></p>
+  `;
+  chatBox.scrollTop = chatBox.scrollHeight;
+}

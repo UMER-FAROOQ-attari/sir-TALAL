@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<!-- <body>
     <input type="text" id="person" placeholder="Enter Your name ...">
     <br>
     <input type="password" id="code" placeholder="Enter Your password ...">
     <hr>
-    <button id="submit">Ok</button>
+    <button id="submit">Ok</button> -->
+<div style="width:300px; border:1px solid gray; padding:10px;">
+  <div id="chatBox" style="height:200px; overflow-y:auto; border:1px solid #ddd; padding:5px;"></div>
+
+  <input type="text" id="sender" placeholder="Your Name" style="width:100%; margin:5px 0;">
+  <input type="text" id="msgInput" placeholder="Type Message..." style="width:100%; margin:5px 0;">
+  <button id="sendBtn">Send</button>
+</div>
+
 </body>
 <script src="./app.js"></script>
 </html>
