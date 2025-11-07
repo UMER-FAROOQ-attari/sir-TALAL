@@ -16,10 +16,20 @@
 // console.log(fruit2)
 // console.log(fruit3)
 // console.log(fruit4)
-const fruits = ["Apple", "Orange", "Banana", "Mango"];
-let [fruit1 , fruit2 ,fruit3,fruit4] = fruits;
-console.log(fruits)
-console.log(fruit1)
-console.log(fruit2)
-console.log(fruit3)
-console.log(fruit4)
+// const fruits = ["Apple", "Orange", "Banana", "Mango"];
+// let [fruit1 , fruit2 ,fruit3,fruit4] = fruits;
+// console.log(fruits)
+// console.log(fruit1)
+// console.log(fruit2)
+// console.log(fruit3)
+// console.log(fruit4)
+let obj = {
+    careName:"Mehran",
+    fuleAverage :"20km",
+    country:{pakistani :true,
+        city:"lahore"
+    }
+}
+let {careName,fuleAverage,country :{pakistani,city}}=obj;
+console.log(obj);
+console.log(careName,fuleAverage,pakistani,city);
