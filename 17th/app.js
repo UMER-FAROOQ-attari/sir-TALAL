@@ -47,3 +47,24 @@
 // }
 // const user1 = new Student("Umer","khadeemattar@gmail.com");
 // user1.msg("Slam bhai ")
+
+let submit = document.getElementById("submit")
+
+class User {
+    constructor(name, password) {
+        this.name = name;
+        this.password = password
+    }
+    masg() {
+        console.log(`hello ${this.name} kesy ho ik baat suno password ye ${this.password} hy apka`)
+    }
+    
+}
+let users = [];
+submit.addEventListener("click", () => {
+    let person = document.getElementById("person");
+    let code = document.getElementById("code");
+    let newUser = new User(person.value, code.value)
+    users.push(newUser);
+    newUser.masg()
+})
