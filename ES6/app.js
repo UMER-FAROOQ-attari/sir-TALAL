@@ -12,6 +12,7 @@ let obj = new Map([
     ["age",19],
     ["web devloper",true]
 ])
-obj.clear()
 console.log(obj)
-console.log()
+console.log(obj.delete("fullname"))
+Symbol.iterator()
+console.log(obj)
