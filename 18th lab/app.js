@@ -34,3 +34,12 @@
 // }
 // sub = sub/ rattings.length
 // console.log(sub)
+let sale  = [1200,2000 , 2300,800];
+let sub = 0;
+for(let numb of sale ){
+    sub += numb;
+    
+}
+let higest = Math.max(...sale)
+console.log(higest)
+console.log(sub)
