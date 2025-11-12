@@ -14,10 +14,15 @@
 // str = str.join("")
 // console.log(str)
 
-let count = 5;
-do {
-    console.log(`Game is starting in  ${count} Sec`);
-    count--;
-}
-while (count != 0)
-console.log(count)
+// let count = 5;
+// do {
+//     console.log(`Game starts in  ${count} Sec`);
+//     count--;
+// }
+// // while (count > 0)
+// console.log(`Game start`);
+// setTimeout(() => console.log(`Game will start soon`), 1000);
+// setTimeout(() => console.log(`bas hogya`), 2000);
+// setTimeout(() => console.log(`bas 5 mint or`), 5000);
+// setTimeout(() => console.log(`yar masla agya thora`), 7000);
+// setTimeout(() => console.log(`khuch bi nhi mazak tha bs`), 10000);
