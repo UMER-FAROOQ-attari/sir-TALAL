@@ -26,3 +26,11 @@
 // setTimeout(() => console.log(`bas 5 mint or`), 5000);
 // setTimeout(() => console.log(`yar masla agya thora`), 7000);
 // setTimeout(() => console.log(`khuch bi nhi mazak tha bs`), 10000);
+// let rattings = [5,3,4,2,4];
+// let sub = 0;
+// for(let numb of rattings ){
+//     sub += numb;
+
+// }
+// sub = sub/ rattings.length
+// console.log(sub)
