@@ -6,11 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.564);
+    }
+
+    .total {
+        padding: 10px;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        height: 100vh;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxs {
+        border: 2px solid rgba(0, 0, 0, 0.653);
+        border: transparent;
+        background-color: rgba(255, 255, 0, 0.814);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgb(165, 165, 165);
+    }
+
+    .box {
+        border: transparent;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgb(165, 165, 165);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 900%;
+        width: 180px;
+        height: 180px;
+        border: 2px solid black;
+    }
+
+    .box1 {
+        transition: 0.8s;
+        color: rgb(43, 43, 169);
+        background-color: lightblue;
+    }
+
+    .box2 {
+        transition: 0.8s;
+        color: rgb(195, 96, 60);
+        background-color: lightcoral;
+    }
+
+    .box3 {
+        transition: 0.8s;
+        color: rgb(50, 119, 146);
+        background-color: lightskyblue;
+    }
+
+    .box4 {
+        transition: 0.8s;
+        color: rgb(193, 193, 69);
+        background-color: lightgoldenrodyellow;
+    }
+
+    .box5 {
+        transition: 0.8s;
+        color: gray;
+        background-color: lightgray;
+    }
+
+    .box6 {
+        transition: 0.8s;
+        color: green;
+        background-color: lightgreen;
+    }
+
+    .box1:hover {
+        background-color: rgb(43, 43, 169);
+        color: lightblue;
+    }
+
+    .box2:hover {
+        background-color: rgb(195, 96, 60);
+        color: lightcoral
+    }
+
+    .box3:hover {
+        background-color: rgb(50, 119, 146);
+        color: lightskyblue;
+    }
+
+    .box4:hover {
+        background-color: rgb(193, 193, 69);
+        color: lightgoldenrodyellow;
+    }
+
+    .box5:hover {
+        background-color: gray;
+        color: lightgray;
+    }
+
+    .box6:hover {
+        background-color: green;
+        color: lightgreen;
+    }
+</style>
 
 <body>
-<div class="total">
-    
-</div>
+    <div class="total">
+        <h1>نمبر کس ڈے کے پیچھے ہے ۔ اس کو دبائیں <br>(لازمی)</h1>
+        <div class="boxs">
+            <div class="box1 box">?</div>
+            <div class="box2 box">?</div>
+            <div class="box3 box">?</div>
+            <div class="box4 box">?</div>
+            <div class="box5 box">?</div>
+            <div class="box6 box">?</div>
+        </div>
+    </div>
 </body>
 <script src="./app.js"></script>
 
