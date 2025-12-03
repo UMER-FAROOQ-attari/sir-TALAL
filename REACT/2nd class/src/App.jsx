@@ -2,6 +2,7 @@ import './App.css'
 import { Card } from './components/Card'
 
 function App() {
+  let age = prompt("pleas enter your age");
   return (
     < >
       
@@ -10,8 +11,9 @@ function App() {
         <label htmlFor="userName" className='text-yellow-400 text-3xl font-bold '>NAME</label>
         <input type="text" id='userName' className='border-2 shadow-lg ml-5  rounded-2xl p-5 m-5 text-2xl font-extrabold capitalize bg-yellow-400 text-black '  />
       </table>
+   {age >= "18" && 
       <div className="flex flex-wrap gap-5 align-items-center justify-center">
-      <Card name = "UMER" src = "https://randomuser.me/api/portraits/men/1.jpg"  />
+      <Card name = "Umer" src = "https://randomuser.me/api/portraits/men/1.jpg"  />
       <Card name = "ALI" src = "https://randomuser.me/api/portraits/men/2.jpg"  />
       <Card name = "ahmed" src = "https://randomuser.me/api/portraits/men/3.jpg"  />
       <Card name = "BAKER" src = "https://randomuser.me/api/portraits/men/4.jpg"  />
@@ -31,7 +33,7 @@ function App() {
       <Card name = "UMER" src = "https://randomuser.me/api/portraits/men/18.jpg"  />
       <Card name = "UMER" src = "https://randomuser.me/api/portraits/men/19.jpg"  />
     
-    </div>
+    </div>}
     </>
   )
 }
