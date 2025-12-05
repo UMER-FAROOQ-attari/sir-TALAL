@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Premium Wireless Headphones",
+    "description": "High-quality bass, noise-cancellation, and 20 hours battery backup.",
+    "image": "https://img.freepik.com/free-photo/black-cordless-headphones-gray-textile_417767-474.jpg",
+    "price": 120,
+    "category": "Electronics"
+  },
+  {
+    "id": 2,
+    "title": "Classic Leather Wallet",
+    "description": "Hand-stitched pure leather wallet with 6 card slots and 2 cash pockets.",
+    "image": "https://images.unsplash.com/photo-1519744792095-2f2205e87b6f",
+    "price": 25,
+    "category": "Accessories"
+  },
+  {
+    "id": 3,
+    "title": "Smart Fitness Watch",
+    "description": "Heart-rate monitor, step tracking, sleep analysis with waterproof design.",
+    "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b",
+    "price": 60,
+    "category": "Gadgets"
+  },
+  {
+    "id": 4,
+    "title": "Modern Table Lamp",
+    "description": "Warm LED light with minimalistic wooden design for study or bedroom.",
+    "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36",
+    "price": 45,
+    "category": "Home Decor"
+  },
+  {
+    "id": 5,
+    "title": "Casual Men's Sneakers",
+    "description": "Comfortable everyday sneakers with breathable mesh material.",
+    "image": "https://img.freepik.com/free-photo/classic-stylish-men-s-shoes-closeup-gray_169016-3916.jpg?t=st=1764930397~exp=1764933997~hmac=400ffc50151cd94e0735d4dfbdb9538516f9cef6ff42a60616c06af97856de90&w=2000",
+    "price": 40,
+    "category": "Footwear"
+  },
+  {
+    "id": 6,
+    "title": "Gaming Mechanical Keyboard",
+    "description": "RGB backlit keys, blue switches, and durable metal frame for pro gamers.",
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+    "price": 89,
+    "category": "Electronics"
+  },
+  {
+    "id": 7,
+    "title": "Vintage Analog Camera",
+    "description": "Retro-style film camera with manual controls and premium lens.",
+    "image": "https://img.freepik.com/free-photo/vintage-photo-camera-composition_23-2148913936.jpg?ga=GA1.1.1973251641.1763786913&semt=ais_se_enriched&w=740&q=80",
+    "price": 150,
+    "category": "Photography"
+  },
+  {
+    "id": 8,
+    "title": "Minimalist Office Chair",
+    "description": "Ergonomic design with breathable mesh and adjustable lumbar support.",
+    "image": "https://img.freepik.com/premium-photo/modern-ergonomic-chair-minimalist-display-platform-with-soft-lighting_836155-4117.jpg?ga=GA1.1.1973251641.1763786913&semt=ais_se_enriched&w=740&q=80",
+    "price": 110,
+    "category": "Furniture"
+  },
+  {
+    "id": 9,
+    "title": "Stainless Steel Water Bottle",
+    "description": "Double-wall insulated steel bottle that keeps drinks cold for 24 hours.",
+    "image": "https://img.freepik.com/free-photo/elegant-bronze-cosmetic-bottle-with-transparent-cap_187299-47581.jpg?ga=GA1.1.1973251641.1763786913&semt=ais_se_enriched&w=740&q=80",
+    "price": 18,
+    "category": "Lifestyle"
+  },
+  {
+    "id": 10,
+    "title": "Wireless Bluetooth Speaker",
+    "description": "Portable speaker with deep bass, waterproof body and 10-hour battery.",
+    "image": "https://img.freepik.com/free-psd/yellow-wireless-portable-speaker_23-2151977332.jpg?ga=GA1.1.1973251641.1763786913&semt=ais_se_enriched&w=740&q=80",
+    "price": 55,
+    "category": "Audio"
+  },
+  {
+    "id": 11,
+    "title": "Smart LED Desk Clock",
+    "description": "Modern digital clock with temperature display and soft ambient lighting.",
+    "image": "https://img.freepik.com/premium-photo/electronic-liquid-crystal-clock-with-digital-indication-time-date-isolated-white-background_322433-1821.jpg?ga=GA1.1.1973251641.1763786913&semt=ais_se_enriched&w=740&q=80",
+    "price": 35,
+    "category": "Home"
+  },
+  {
+    "id": 12,
+    "title": "Noise-Canceling Earbuds",
+    "description": "Lightweight wireless earbuds with immersive surround sound.",
+    "image": "https://img.freepik.com/free-photo/rendering-smart-home-device_23-2151039340.jpg?ga=GA1.1.1973251641.1763786913&semt=ais_se_enriched&w=740&q=80",
+    "price": 49,
+    "category": "Audio"
+  },
+  {
+    "id": 13,
+    "title": "Portable Mini Projector",
+    "description": "Compact projector ideal for movies, presentations, and gaming.",
+    "image": "https://images.unsplash.com/photo-1594007654729-407eedc4be65",
+    "price": 140,
+    "category": "Gadgets"
+  },
+  {
+    "id": 14,
+    "title": "Travel Backpack",
+    "description": "Water-resistant, multi-pocket backpack perfect for travel and daily use.",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    "price": 32,
+    "category": "Travel"
+  },
+  {
+    "id": 15,
+    "title": "Premium Coffee Mug",
+    "description": "Ceramic mug with matte finish and insulated double-wall design.",
+    "image": "https://images.unsplash.com/photo-1503602642458-232111445657",
+    "price": 12,
+    "category": "Kitchen"
+  }
+]
