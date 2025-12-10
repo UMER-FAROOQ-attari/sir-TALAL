@@ -4,9 +4,12 @@ function App({msg}) {
 let [showBadge, setShowBadge] = useState(false)
 useEffect(()=>{
   console.log("efacteded .....")
-},[])
+},[showBadge])
 const  handle = ()=>{
 setShowBadge(true)
+let myTime = setTimeout(() => {
+  setShowBadge(false)
+}, 900);
 }
   return (
     <>
