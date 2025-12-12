@@ -12,7 +12,8 @@ function App() {
         setShowBadge(true)
         const myTimeout = setTimeout(() => {
             setShowBadge(false)
-        }, 900)
+        }, 1500)
+        return(()=>clearInterval(myTimeout))
     }
 
     return (
