@@ -1,0 +1,18 @@
+import "./App.css";
+import Zub from "./comonents/Chaild";
+import Text from './comonents/Chaild'
+function App() {
+  return (
+    <div className="">
+    <h1>HY </h1>
+
+<Zub  masg = "i am umer" />
+<Text />
+   
+   
+   
+</div>
+  );
+}
+
+export default App;
