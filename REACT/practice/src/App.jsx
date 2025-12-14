@@ -2,18 +2,30 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-useEffect(()=>{
-  document.title = count
+  const [count, setCount] = useState(window.screen.width);
+function crntwidth(){
+  setCount(window.innerWidth)
+}
+  useEffect(()=>{
+  window.addEventListener("resize",crntwidth)
+})
+
+
+
+  // useEffect(()=>{
+//   document.title = count
   
-},[])
+// },[count])
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-8 font-sans">
-      
-      <div className="bg-white p-10 rounded-xl shadow-2xl transition duration-500 ease-in-out hover:shadow-3xl w-80 text-center">
+
+
+
+     <h1>The size of window is <span>{count}</span></h1> 
+      {/* <div className="bg-white p-10 rounded-xl shadow-2xl transition duration-500 ease-in-out hover:shadow-3xl w-80 text-center"> */}
         
-        <h1 
+        {/* <h1 
           className={`text-7xl font-extrabold mb-8 transition-colors duration-300 ${
             count > 0 ? 'text-green-600' : count < 0 ? 'text-red-600' : 'text-gray-800'
           }`}
@@ -48,7 +60,7 @@ useEffect(()=>{
           Reset
         </button>
 
-      </div>
+      </div> */}
     </div>
   );
 }
