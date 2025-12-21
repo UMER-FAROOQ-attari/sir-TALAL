@@ -26,3 +26,10 @@ many
 line
 comment  */
 // comment just for readalbe and debuging
+function makeFieldYellow() {
+  document.getElementById('email').style.backgroundColor = 'yellow';
+}
+
+function makeFieldWhite() {
+  document.getElementById('email').style.backgroundColor = 'white';
+}
