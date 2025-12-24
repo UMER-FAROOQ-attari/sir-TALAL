@@ -8,7 +8,15 @@
 </head>
 
 <body>
-  Email:<br>
+
+<form onSubmit="checkAddress('email');">
+  Email:
+  <input type="text" id="email">
+  <input type="submit" value="Submit">
+</form>
+
+
+  <!-- Email:<br>
 <input type="text" id="email" size="30" 
        onFocus="makeFieldYellow();" 
        onBlur="makeFieldWhite();">
@@ -58,20 +66,16 @@
 <p id="loris" onMouseover="expand();" onMouseout="shrink();">
   Slow Loris: Mouse over for more info
 </p>
-
+-->
 <script>
-  function expand() {
-    const p = document.getElementById('loris');
-    p.innerHTML = "Slow Loris: Mouse over for more info. Additional details about the Slow Loris appear here...";
-    p.style.backgroundColor = "#e0ffe0"; // optional visual effect
+  function checkAddress(fieldId) {
+  var val = document.getElementById(fieldId).value;
+  if (val === "") {
+    alert("Email address required.");
   }
+}
 
-  function shrink() {
-    const p = document.getElementById('loris');
-    p.innerHTML = "Slow Loris: Mouse over for more info";
-    p.style.backgroundColor = "white"; // reset background
-  }
-</script>
+</script> 
 
 </body>
 </html>
