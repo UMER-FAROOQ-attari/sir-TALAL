@@ -1,34 +1,124 @@
-*{
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: rgb(216, 213, 213);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
-ul{
-  background: #000;
-  list-style: none;
+
+body {
+  background-color: #fafafa; 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  font-size: 20px;
-  font-weight: 500;
+  min-height: 100vh;
+}
 
+.card {
+  background: #ffffff;
+  width: 350px;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
-li,h1 ,p{
-  background: #000;
+
+
+.card .head {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
 }
-.nav , .card{
-  padding: 20px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: #000;
-  color: aliceblue;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    gap: 50px;
-    padding-left: 100px;
-    margin: 10px;
-    border-radius: 10px;
-    flex-wrap: wrap;
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar-placeholder {
+  width: 32px;
+  height: 32px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+}
+
+.user h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btns button {
+  background: transparent;
+  border: none;
+  color: #0095f6; 
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btns button:hover {
+  color: #00376b;
+}
+
+.main img {
+  width: 100%; 
+  height: auto;
+  display: block;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+}
+
+.f1 {
+  display: flex;
+  gap: 15px;
+}
+
+.s2 {
+  display: flex;
+}
+
+.bottam {
+  padding: 0 12px 12px 12px;
+}
+
+.likes p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #262626;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title p {
+  font-size: 14px;
+  color: #262626;
+}
+
+.hashtags {
+  color: #00376b !important;
+  cursor: pointer;
 }
