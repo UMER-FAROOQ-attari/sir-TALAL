@@ -3,54 +3,63 @@ import Carousel from 'react-material-ui-carousel';
 import { Box } from '@mui/material';
 
 function ImageSlider() {
-    // 1. تصاویر کی لسٹ (اپنی تصاویر کے لنکس یہاں ڈالیں)
     const items = [
         {
-            imgUrl: "https://via.placeholder.com/800x400?text=Slide+1",
-            title: "پہلی تصویر"
+            imgUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+            title: "Sunset View"
         },
         {
-            imgUrl: "https://via.placeholder.com/800x400?text=Slide+2",
-            title: "دوسری تصویر"
+            imgUrl: "https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=800&q=80",
+            title: "Mountain Landscape"
         },
         {
-            imgUrl: "https://via.placeholder.com/800x400?text=Slide+3",
-            title: "تیسری تصویر"
+            imgUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+            title: "Ocean Waves"
+        },
+        {
+            imgUrl: "https://images.unsplash.com/photo-1493244040629-496f6d136cc3?auto=format&fit=crop&w=800&q=80",
+            title: "City Night Lights"
+        },
+        {
+            imgUrl: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
+            title: "Forest Path"
         }
     ];
 
     return (
-        <Box sx={{ maxWidth: 800, margin: '0 auto', mt: 5 }}>
+        <Box sx={{ maxWidth: 900, width: '100%', margin: '0 auto', mt: 5 }}>
             <Carousel
-                autoPlay={true}       // خود بخود چلنے کے لیے
-                animation="slide"     // سلائیڈ ایفیکٹ (fade بھی ہو سکتا ہے)
-                indicators={true}     // نیچے نقطے (dots) دکھانے کے لیے
-                navButtonsAlwaysVisible={true} // سائیڈ والے تیر (arrows) ہمیشہ دکھانے کے لیے
+                autoPlay={true}               // خود بخود slide
+                interval={3000}               // 3 seconds per slide
+                animation="slide"             // slide animation
+                indicators={true}             // dots نیچے دکھائیں
+                navButtonsAlwaysVisible={true} // arrows ہمیشہ دکھائیں
+                stopAutoPlayOnHover={false}  // hover par rukna nahi chahiye
+                swipe={true}                  // mobile swipe enable
             >
-                {
-                    items.map((item, index) => (
-                        <Item key={index} item={item} />
-                    ))
-                }
+                {items.map((item, index) => (
+                    <Item key={index} item={item} />
+                ))}
             </Carousel>
         </Box>
-    )
+    );
 }
 
 function Item({ item }) {
     return (
-        <Box 
+        <Box
             component="img"
             src={item.imgUrl}
             alt={item.title}
             sx={{
                 width: '100%',
-                height: '400px',    
-                objectFit: 'cover', 
-                borderRadius: '10px' 
+                height: { xs: '250px', sm: '350px', md: '450px' }, // responsive
+                objectFit: 'cover',
+                borderRadius: 2,
+                boxShadow: 3,
             }}
         />
-    )
+    );
 }
 
 export default ImageSlider;
