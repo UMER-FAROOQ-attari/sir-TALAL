@@ -1,27 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Cards from "./Cards";
-import axios from 'axios'
-import { useState ,useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 const Main = () => {
-    const [users, setUser] = useState([]);
- useEffect(() => {
-    axios
-      .get("https://fakestoreapi.com/products")
-      .then((response) => setUser(response.data))
-      .catch((error) => console.log(error));
+  const [items, setItems] = useState([]);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    fetch("https://fakestoreapi.com/products")
+      .then((res) => res.json())
+      .then((data) => setItems(data))
+      .catch((err) => console.log(err));
   }, []);
+
   return (
-    <>
-        <div className="main flex flex-wrap gap-5 ml-10">
-   {users.map((user)=>(
-    <div key={user.id}>
-      <Cards img={user.image} title={users.title} price={user.price} />      
+    <div className="bg-orange-500 p-5 rounded-xl flex flex-wrap gap-5 justify-center">
+      {items.map((val) => (
+        <div key={val.id} className="w-64 cursor-pointer" onClick={() => navigate(`/product/${val.id}`)}>
+          <Cards 
+            img={val.image} 
+            title={val.title} 
+            price={val.price} 
+            rating={val.rating} 
+            category={val.category} 
+          />
+        </div>
+      ))}
     </div>
-  
-  ))}
-    
-      </div>
-    </>
   );
 };
 

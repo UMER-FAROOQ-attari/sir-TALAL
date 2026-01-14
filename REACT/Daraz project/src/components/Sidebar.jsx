@@ -1,32 +1,49 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="sidebar flex flex-col border-gray-400 border-2 p-3 rounded-md gap-4 h-fit text-center">
-      <h1 className="text-3xl font-bold">Categories</h1>
+    <div className="bg-orange-500 w-full md:w-60 p-6 rounded-lg h-fit shadow-md">
+      <h2 className="text-2xl font-bold text-white mb-6 underline decoration-orange-300">Categories</h2>
+      <div className="flex flex-col gap-4 text-white font-medium">
+        
+        {/* Is line mein 'defaultChecked' add kiya gaya hai */}
+        <div className="flex items-center gap-2">
+          <input 
+            type="radio" 
+            name="item" 
+            id="all" 
+            onChange={() => navigate("/")} 
+            defaultChecked 
+          />
+          <label htmlFor="all" className="cursor-pointer">All Products</label>
+        </div>
 
-      <div className="check gap-1.5 flex text-xl font-bold">
-        <input type="radio" name="category" id="man" />
-        <label htmlFor="man">Man</label>
-      </div>
+        <div className="flex items-center gap-2">
+          <input type="radio" name="item" id="m" onChange={() => navigate("/man")} />
+          <label htmlFor="m" className="cursor-pointer">Men's Fashion</label>
+        </div>
 
-      <div className="check gap-1.5 flex text-xl font-bold">
-        <input type="radio" name="category" id="females" />
-        <label htmlFor="females">Females</label>
-      </div>
+        <div className="flex items-center gap-2">
+          <input type="radio" name="item" id="f" onChange={() => navigate("/females")} />
+          <label htmlFor="f" className="cursor-pointer">Women's Fashion</label>
+        </div>
 
-      <div className="check gap-1.5 flex text-xl font-bold">
-        <input type="radio" name="category" id="kids" />
-        <label htmlFor="kids">Jewelery</label>
-      </div>
+        <div className="flex items-center gap-2">
+          <input type="radio" name="item" id="e" onChange={() => navigate("/electronics")} />
+          <label htmlFor="e" className="cursor-pointer">Electronics</label>
+        </div>
 
-      <div className="check gap-1.5 flex text-xl font-bold">
-        <input type="radio" name="category" id="electronics" />
-        <label htmlFor="electronics">Electronics</label>
+        <div className="flex items-center gap-2">
+          <input type="radio" name="item" id="j" onChange={() => navigate("/jewelery")} />
+          <label htmlFor="j" className="cursor-pointer">Jewelery</label>
+        </div>
+
       </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default Sidebar
+export default Sidebar;
