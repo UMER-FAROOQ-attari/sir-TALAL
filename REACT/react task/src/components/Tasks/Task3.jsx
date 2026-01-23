@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 
 const Task3 = () => {
   return (
-    <div className="flex flex-wrap bg-amber-200 justify-center p-5">
+    <div className="flex flex-wrap bg-sky-200 justify-center p-5">
       <Routes>
         <Route index element={<SignUp />} /> 
         <Route path="login" element={<Login />} />

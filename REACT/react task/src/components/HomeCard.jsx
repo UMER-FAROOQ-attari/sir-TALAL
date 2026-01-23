@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
 
 export default function HomeCard(props) {
   return (
-    <Card className='m-5'  sx={{ maxWidth: 345 }}>
+    <Card className='m-5 hover:animate-none animate-pulse '  sx={{ maxWidth: 345 }}>
    <CardMedia
     component="img"
-    className="p-5 w-full h-40 object-cover inset-shadow-sm inset-shadow-indigo-500 ."
+    className="p-5 w-full h-40 object-cover inset-shadow-sm inset-shadow-sky-700 "
     image={props.img}
     alt={props.title}
   />

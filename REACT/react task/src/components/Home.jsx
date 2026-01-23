@@ -9,7 +9,7 @@ import HomeCard from './HomeCard'
 const Home = () => {
   return (
   <>
-  <div className="home flex flex-wrap gap-4 p-5 justify-around">
+  <div className="home bg-sky-100 flex flex-wrap gap-4 p-5 justify-around">
   <HomeCard img={pic1} link="/task1"  title="Task 1 (StudentCard)" text="Create a reusable card component to display different student data using Props and the .map() function." />
   <HomeCard img={pic2} link="/task2" title="Task 2 (Emoji Counter)" text="Build a simple counter using useState to increase, decrease, or reset numbers with emoji display." />
   <HomeCard img={pic3} link="/task3" title="Task 3 (Signup Form)" text="Design a form to capture user input (Name, Email, Password) using State and show it after clicking submit." />

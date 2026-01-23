@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Poppins", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+@layer utilities {
+  .killer-type {
+    font-family: "Impact", "Haettenschweiler", "Arial Narrow", sans-serif;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .neon-text {
+    text-shadow: 0 6px 20px rgba(255, 255, 255, 0.25), 0 0 18px rgba(56, 189, 248, 0.55);
+  }
+
+  .glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.14), rgba(15, 23, 42, 0.55));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(14px);
+  }
+
+  .tilt-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .tilt-3d:hover {
+    transform: translateY(-6px) rotateX(12deg) rotateY(-12deg);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  }
+
+  .float-slow {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

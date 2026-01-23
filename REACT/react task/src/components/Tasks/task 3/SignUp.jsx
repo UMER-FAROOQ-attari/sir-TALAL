@@ -66,36 +66,37 @@ function submit(e){
     }
     return (
     <>
+    <div className="bg-sky-100">
     <div className="bg-black max-w-fit p-3 m-2 flex flex-col items-center place-self-center rounded-2xl">
-        <h2  className='text-4xl font-bold font-mono text-amber-300'>Sign Up</h2>
+        <h2  className='text-4xl font-bold font-mono text-sky-300'>Sign Up</h2>
         <p className="text-red-500">{msg}</p>
         <form onSubmit={signUP} className='' >
     <div className="flex flex-col p-2 mt-3 gap-0.5 px-10">
-    <label htmlFor="fullName"  className='text-2xl font-bold text-amber-400'>Full Name</label>
-    <input name='name' value={form.name} onChange={submit} type="text"  className='border-2 p-2 rounded-2xl text-amber-200 bg-black' id='fullName'  placeholder='Pleas Enter Your Name' required />
-    <label htmlFor="userEmail" className='text-2xl font-bold text-amber-400'>Email</label>
-    <input name='email' value={form.email} onChange={submit} type="email" className='border-2 p-2 rounded-2xl  text-amber-200  bg-black' id='userEmail' placeholder='Pleas Enter Your Email' required/>
-    <label htmlFor="password" className='text-2xl font-bold text-amber-400'>Password</label>
-    <input name='password' value={form.password} onChange={submit} type={showPassword ? "text" : "password"}  className='border-2 p-2 rounded-2xl  text-amber-200  bg-black' id="password"  placeholder='Pleas Creat Your Password' required/>
-    <label className="text-amber-200 text-sm mt-1 flex items-center">
+    <label htmlFor="fullName"  className='text-2xl font-bold text-sky-400'>Full Name</label>
+    <input name='name' value={form.name} onChange={submit} type="text"  className='border-2 p-2 rounded-2xl text-sky-200 bg-black' id='fullName'  placeholder='Pleas Enter Your Name' required />
+    <label htmlFor="userEmail" className='text-2xl font-bold text-sky-400'>Email</label>
+    <input name='email' value={form.email} onChange={submit} type="email" className='border-2 p-2 rounded-2xl  text-sky-200  bg-black' id='userEmail' placeholder='Pleas Enter Your Email' required/>
+    <label htmlFor="password" className='text-2xl font-bold text-sky-400'>Password</label>
+    <input name='password' value={form.password} onChange={submit} type={showPassword ? "text" : "password"}  className='border-2 p-2 rounded-2xl  text-sky-200  bg-black' id="password"  placeholder='Pleas Creat Your Password' required/>
+    <label className="text-sky-200 text-sm mt-1 flex items-center">
   <input type="checkbox"onChange={(e) => setShowPassword(e.target.checked)} className="mr-2"/>
   Show Password
 </label>
-    <label htmlFor="cnfrmpassword" className='text-2xl font-bold text-amber-400'>Confirm Password</label>
-    <input name='confirm' type="password" value={form.confirm} onChange={submit} className='border-2 p-2 rounded-2xl  text-amber-200  bg-black' id="cnfrmpassword"  placeholder='Again Enter Password'   required/>
+    <label htmlFor="cnfrmpassword" className='text-2xl font-bold text-sky-400'>Confirm Password</label>
+    <input name='confirm' type="password" value={form.confirm} onChange={submit} className='border-2 p-2 rounded-2xl  text-sky-200  bg-black' id="cnfrmpassword"  placeholder='Again Enter Password'   required/>
     <div className="submit text-center m-3">
-    <input type="submit"  className="btn border-2 w-fit bg-black text-amber-200 p-2 rounded-2xl font-medium cursor-pointer" />
+    <input type="submit"  className="btn border-2 w-fit bg-black text-sky-200 p-2 rounded-2xl font-medium cursor-pointer" />
   
     </div>
     </div>
-    <p className='text-amber-50'>{`Hy ${form.name} Your email is ${form.email}`}</p>
-<p className='text-amber-50'>if You have a acount already pleas <Link className='text-blue-400' to="/task3/login">login</Link></p>
+    <p className='text-sky-50'>{`Hy ${form.name} Your email is ${form.email}`}</p>
+<p className='text-sky-50'>if You have a acount already pleas <Link className='text-blue-400' to="/task3/login">login</Link></p>
         </form>
     </div>
 
 
 
-
+</div>
     </>      
     )
     }
