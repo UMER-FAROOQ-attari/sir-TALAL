@@ -2,6 +2,9 @@
 
 :root {
   font-family: "Poppins", "Avenir Next", "Segoe UI", sans-serif;
+  --accent-1: 56 189 248;
+  --accent-2: 245 158 11;
+  --accent-3: 34 211 238;
 }
 
 body {
@@ -16,13 +19,41 @@ body {
   }
 
   .neon-text {
-    text-shadow: 0 6px 20px rgba(255, 255, 255, 0.25), 0 0 18px rgba(56, 189, 248, 0.55);
+    text-shadow:
+      0 6px 20px rgba(255, 255, 255, 0.25),
+      0 0 18px rgb(var(--accent-1) / 0.55);
   }
 
   .glass {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.14), rgba(15, 23, 42, 0.55));
     border: 1px solid rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(14px);
+  }
+
+  .glass-strong {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(2, 6, 23, 0.4));
+    border: 1px solid rgb(var(--accent-1) / 0.25);
+    backdrop-filter: blur(18px);
+  }
+
+  .neon-border {
+    box-shadow:
+      0 0 0 1px rgb(var(--accent-1) / 0.35),
+      0 0 18px rgb(var(--accent-1) / 0.5);
+  }
+
+  .glow-btn {
+    box-shadow:
+      0 0 14px rgb(var(--accent-1) / 0.35),
+      0 0 30px rgb(var(--accent-1) / 0.25);
+  }
+
+  .perspective {
+    perspective: 1200px;
+  }
+
+  .card-3d {
+    transform-style: preserve-3d;
   }
 
   .tilt-3d {
@@ -37,6 +68,87 @@ body {
 
   .float-slow {
     animation: float 6s ease-in-out infinite;
+  }
+
+  .accent-text {
+    color: rgb(var(--accent-1));
+  }
+
+  .accent-text-soft {
+    color: rgb(var(--accent-1) / 0.7);
+  }
+
+  .accent-text-muted {
+    color: rgb(var(--accent-1) / 0.55);
+  }
+
+  .accent2-text {
+    color: rgb(var(--accent-2));
+  }
+
+  .accent2-text-soft {
+    color: rgb(var(--accent-2) / 0.75);
+  }
+
+  .chip-accent {
+    border: 1px solid rgb(var(--accent-1) / 0.25);
+  }
+
+  .chip-accent-2 {
+    border: 1px solid rgb(var(--accent-2) / 0.3);
+  }
+
+  .btn-accent {
+    background-color: rgb(var(--accent-1) / 0.14);
+    color: rgb(var(--accent-1));
+    border: 1px solid rgb(var(--accent-1) / 0.3);
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .btn-accent:hover {
+    background-color: rgb(var(--accent-1) / 0.3);
+    border-color: rgb(var(--accent-1) / 0.5);
+  }
+
+  .btn-accent-outline {
+    color: rgb(var(--accent-1) / 0.85);
+    border: 1px solid rgb(var(--accent-1) / 0.4);
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .btn-accent-outline:hover {
+    color: rgb(var(--accent-1));
+    background-color: rgb(var(--accent-1) / 0.12);
+  }
+
+  .btn-ghost:hover {
+    border-color: rgb(var(--accent-1) / 0.4);
+    color: rgb(var(--accent-1));
+  }
+
+  .nav-link {
+    transition: color 0.2s ease;
+  }
+
+  .nav-link:hover {
+    color: rgb(var(--accent-1));
+  }
+
+  .blob-accent-1 {
+    background-color: rgb(var(--accent-1) / 0.22);
+  }
+
+  .blob-accent-2 {
+    background-color: rgb(var(--accent-2) / 0.18);
+  }
+
+  .profile-halo {
+    background-color: rgb(var(--accent-1) / 0.18);
+  }
+
+  .profile-image {
+    border: 1px solid rgb(var(--accent-1) / 0.55);
+    box-shadow: 0 0 50px rgb(var(--accent-1) / 0.45);
   }
 }
 
