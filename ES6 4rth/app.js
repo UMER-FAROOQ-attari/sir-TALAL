@@ -29,12 +29,12 @@ let user2 = {
         console.log(`Hi ${this.name}`)
     }
 }
-setTimeout(user2.greet,1000);
-setTimeout(user2.greet.bind(user2),1000);
+setTimeout(user2.greet, 1000);
+setTimeout(user2.greet.bind(user2), 1000);
 console.log("Task 2.1");
-function counts(){
+function counts() {
     let num = 0;
-    return ()=>{
+    return () => {
         num++;
         console.log(num)
     }
@@ -43,12 +43,12 @@ let counter1 = counts()
 counter1()
 counter1()
 console.log("Task 2.2");
-function counterfunc(name){
-   let count = 0;
-  return()=>{
-    count++;
-    console.log(`${name} : ${count}`)
-  }
+function counterfunc(name) {
+    let count = 0;
+    return () => {
+        count++;
+        console.log(`${name} : ${count}`)
+    }
 }
 let counter2 = counterfunc("1st");
 counter2();
@@ -62,3 +62,85 @@ counter3();
 counter3();
 counter3();
 counter3();
+console.log("Task 3.1")
+function Admtion(name, age) {
+    this.name = name;
+    this.age = age;
+    this.school = "SMIT";
+
+
+}
+Admtion.prototype.info = function () {
+    console.log(`name:${this.name},
+                Age:${this.age},
+                School:${this.school}, `)
+}
+let student1 = new Admtion("Younas", 20);
+let student2 = new Admtion("Yasir", 24);
+let student3 = new Admtion("Ahmed", 19);
+let student4 = new Admtion("Usama", 23);
+student1.info()
+student2.info()
+student3.info()
+student4.info()
+console.log("Task 3.2")
+class Sigin {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+        this.school = "SMIT"
+    }
+    info() {
+        console.log(`Hi : ${this.name},
+        Age :${this.age},
+        School :${this.school}`)
+    }
+}
+let stdnt1 = new Sigin("Baker", 26)
+let stdnt2 = new Sigin("Shakeeb", 24)
+let stdnt3 = new Sigin("Haseeb", 22)
+stdnt1.info()
+stdnt2.info()
+stdnt3.info()
+console.log("Task 3.3")
+class Empslry{
+    constructor(name,age,amount){
+       this.name = name;
+       this.age = age;
+       this.amount = amount;
+    }
+    cns(){
+        console.log(`hy : ${this.name},
+            your Age : ${this.age},
+            your selry : ${this.amount}`)
+    }
+}
+class Mngrselry extends Empslry{
+    constructor(name , age,amount){
+        super(name,age,amount);
+        this.totalslry  = this.amount + 1200
+    }
+    cns(){
+        console.log(`hi ${this.name},
+            your age : ${this.age}
+            your selry :${this.totalslry}`)
+    }
+}
+let umer = new Mngrselry("Umer",19,20000);
+let ali = new Empslry("Ali",21,18000);
+umer.cns();
+ali.cns();
+console.log("Task 4.1");
+function tm(){
+    return new Date().toLocaleDateString()
+}
+console.log(`1st ${tm()}`);
+function s2(){
+    console.log(`2nd ${tm()}`)
+}   
+s2()
+setTimeout(() => {
+    console.log(`3rd ${tm()}`)
+}, 1500);
+console.log( `last ${tm()}`);
+console.log("Task 4.1");
