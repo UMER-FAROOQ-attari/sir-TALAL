@@ -174,13 +174,13 @@ stp1(() => {
 });
 console.log("Task 4.3");
 
-function tim() {
+function tim1() {
     return new Date().toLocaleTimeString();
 }
 function stp1() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            console.log(`first ${tim()}`);
+            console.log(`first ${tim1()}`);
             resolve();
         }, 1000);
     });
@@ -188,7 +188,7 @@ function stp1() {
 function stp2() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            console.log(`second ${tim()}`);
+            console.log(`second ${tim1()}`);
             resolve();
         }, 1000);
     });
@@ -196,7 +196,7 @@ function stp2() {
 function stp3() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            console.log(`third ${tim()}`);
+            console.log(`third ${tim1()}`);
             resolve();
         }, 1000);
     });
@@ -205,5 +205,6 @@ stp1()
     .then(() => stp2())
     .then(() => stp3())
     .then(() => {
-        console.log(`last ${tim()}`);
+        console.log(`last ${tim1()}`);
     });
+console.log("--- Task Manager Project ---");
