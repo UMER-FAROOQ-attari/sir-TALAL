@@ -1,7 +1,7 @@
 ##  How to run this code?   
-1 download the files.
-2 open app.js in VS code 
-3 Run this command in terminal 
+1 download the files.  
+2 open app.js in VS code.  
+3 Run this command in terminal.   
 **node app.js**
 
 ##  My Observations  
