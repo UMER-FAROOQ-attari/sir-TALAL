@@ -5,7 +5,7 @@
 **node app.js**
 
 ##  My Observations  
-I learn Call() , apply() and bind()  
-The most important thing I couldn't understand without code 
-And that's it **OOP**
-Finally, I would thanks to thank Sir Talal for explaining this to us.
+I learn Call() , apply() and bind()    
+The most important thing I couldn't understand without code   
+And that's it **OOP**  
+Finally, I would thanks to thank Sir Talal for explaining this to us.  

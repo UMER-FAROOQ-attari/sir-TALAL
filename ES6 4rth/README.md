@@ -1,7 +1,7 @@
 ## JavaScript (ES6) Advanced Concepts Assignment 4 
 I just finished it. The important topics of this assignment and their definitions are detailed below. I have taken these from different websites and documents.  
 **call()**  
-The call() method of Function instances calls this function with a given this value and arguments provided individually. (MDN);
+The call() method of Function instances calls this function with a given this value and arguments provided individually. (MDN);  
 **apply()**  
 The apply() method lets you write a method that can be used on different objects. (W3schools)  
 **bind()**  

@@ -207,4 +207,3 @@ stp1()
     .then(() => {
         console.log(`last ${tim1()}`);
     });
-console.log("--- Task Manager Project ---");
