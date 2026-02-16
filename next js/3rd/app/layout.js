@@ -1,15 +1,15 @@
 import "./globals.css";
-import Header from "./(users)/component/Header";
+import { Agbalumo } from "next/font/google";
 
-export const metadata = {
-  title: "My App",
-  description: "Next App",
-};
+const fonts = Agbalumo({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={fonts.className}>
         {children}
       </body>
     </html>
