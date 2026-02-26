@@ -13,7 +13,7 @@ export default function Home({ data }) {
           return (
             <li
               key={itm.id}
-              className="border p-3 w-72 h-60 bg-gray-200 rounded-2xl shadow-lg shadow-amber-800/100 "
+              className="border p-3 w-72 h-60 bg-gray-200 rounded-2xl shadow-lg  "
             >
               <h1 className="flex items-center font-bold text-[#00A7E1]">
                 <MdAccountCircle size={40} color="#00A7E1" />

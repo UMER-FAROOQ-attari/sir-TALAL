@@ -10,7 +10,7 @@ export default function Page({ data }) {
     <ul>
       <li
         key={data.id}
-        className="border p-3 m-5 w-72 h-fit bg-gray-200 rounded-2xl shadow-lg shadow-amber-800/100 "
+        className="border p-3 m-5 w-72 h-fit bg-gray-200 rounded-2xl shadow-lg "
       >
         <h1 className="flex items-center font-bold text-[#00A7E1]">
           <MdAccountCircle size={40} color="#00A7E1" />
